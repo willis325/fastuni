@@ -1,0 +1,16 @@
+
+*.sh
+*.md
+*.woff
+*.ttf
+.vscode
+.idea
+.husky
+.local
+Dockerfile
+dist
+public
+docs
+bin
+types/**
+**/*.d.ts

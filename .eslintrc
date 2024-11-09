@@ -1,0 +1,37 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true,
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:vue/vue3-essential",
+    "plugin:import/recommended",
+    "standard",
+    "prettier",
+    "plugin:prettier/recommended",
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module",
+  },
+  "plugins": ["@typescript-eslint", "vue", "prettier", "import"],
+  "rules": {
+    "no-unused-vars": 1,
+    "prettier/prettier": 2,
+    "import/named": 0,
+    "import/no-unresolved": 0,
+    "vue/multi-word-component-names": 0,
+    "vue/return-in-computed-property": 0,
+    "@typescript-eslint/no-explicit-any": 1,
+    "@typescript-eslint/no-unused-vars": 0,
+  },
+  "globals": {
+    "uni": true,
+    "UniApp": true,
+  },
+}
