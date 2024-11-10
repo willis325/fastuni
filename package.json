@@ -48,7 +48,8 @@
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
     "type-check": "vue-tsc --noEmit",
     "lint:prettier": "prettier --write \"**/*.{js,json,ts,tsx,css,less,sass,vue,html,md}\" --cache",
-    "lint:eslint": "eslint --fix \"**/*.{vue,js,ts,jsx,tsx}\" --cache --cache-location node_modules/.cache/eslint/ --cache-strategy content"
+    "lint:eslint": "eslint --fix \"**/*.{vue,js,ts,jsx,tsx}\" --cache --cache-location node_modules/.cache/eslint/ --cache-strategy content",
+    "prepare": "husky"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-4020920240930001",
@@ -85,6 +86,7 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.30.0",
+    "husky": "^9.1.6",
     "prettier": "3.3.3",
     "typescript": "^5.6.3",
     "vite": "5.2.8",
