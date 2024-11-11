@@ -1,0 +1,8 @@
+{
+  extends: ['@commitlint/config-conventional'],
+  rules: {
+    'body-leading-blank': [0],
+    'footer-leading-blank': [0],
+    'type-enum': [2, 'always', ['feat', 'bug', 'fix', 'ui', 'docs', 'style', 'perf', 'release', 'deploy', 'refactor', 'test', 'chore', 'revert', 'merge', 'build', 'day']],
+  },
+}
