@@ -1,17 +1,33 @@
 {
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "FastUni",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
   "pages": [
-    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
     {
       "path": "pages/index/index",
+      "type": "home",
       "style": {
-        "navigationBarTitleText": "uni-app"
+        "navigationBarTitleText": "FastUni"
       }
     }
   ],
-  "globalStyle": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
-  }
+  "subPackages": [
+    {
+      "root": "pages-sub",
+      "pages": [
+        {
+          "path": "auth/login",
+          "type": "page",
+          "layout": "default",
+          "style": {
+            "navigationBarTitleText": "登录"
+          }
+        }
+      ]
+    }
+  ]
 }
