@@ -26,6 +26,10 @@
           "style": {
             "navigationBarTitleText": "登录"
           }
+        },
+        {
+          "path": "other/webview",
+          "type": "page"
         }
       ]
     }

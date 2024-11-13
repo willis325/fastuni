@@ -11,7 +11,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 import ViteRestart from 'vite-plugin-restart';
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [
     UniPages({ dts: 'types/uni-pages.d.ts', exclude: ['**/components/**/**.*'], routeBlockLang: 'json5', subPackages: ['src/pages-sub'] }),
     UniManifest(),
@@ -44,4 +44,17 @@ export default defineConfig({
     port: 4000,
     hmr: true,
   },
-});
+  define: {
+    __UNI_PLATFORM__: JSON.stringify(process.env.UNI_PLATFORM),
+  },
+  build: {
+    sourcemap: mode === 'development',
+    minify: mode === 'development' ? false : 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
+  },
+}));

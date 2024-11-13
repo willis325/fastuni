@@ -35,5 +35,6 @@
   "globals": {
     "uni": true,
     "UniApp": true,
+    "__UNI_PLATFORM__": true,
   },
 }

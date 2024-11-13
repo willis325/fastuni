@@ -1,12 +1,4 @@
-export type RequestOptions = UniApp.RequestOptions & {
-  isReturnNativeResponse?: boolean; // 是否原样返回 res
-};
-
-export interface RequestResult<T = any> {
-  code: number;
-  data: T;
-  message?: string;
-}
+import { RequestOptions, RequestResult } from '@/types/request';
 
 export const request = (options: RequestOptions) => {
   return new Promise((resolve, reject) => {
@@ -25,12 +17,12 @@ export const request = (options: RequestOptions) => {
           console.error('401', data);
           reject(data.message || '授权失败');
         } else {
-          uni.showToast({ icon: 'none', title: '请求错误' });
+          if (!options?.hasErrorNoFailToast) uni.showToast({ icon: 'none', title: '请求错误' });
           reject(data.message || '请求错误');
         }
       },
       fail: (err) => {
-        uni.showToast({ title: err.errMsg || '网络请求错误', icon: 'none', duration: 2000 });
+        if (!options?.hasErrorNoFailToast) uni.showToast({ title: err.errMsg || '网络请求错误', icon: 'none', duration: 2000 });
         reject(err.errMsg || '网络请求错误');
       },
     });
