@@ -1,11 +1,12 @@
 import { defineManifestConfig } from '@uni-helper/vite-plugin-uni-manifest';
+import { version, name, description } from './package.json';
 
 export default defineManifestConfig({
   name: 'FastUni',
   appid: '',
-  description: '',
-  versionName: '1.0.0',
-  versionCode: '100',
+  description,
+  versionName: version,
+  versionCode: version.replace(/./g, ''),
   transformPx: false,
   /* 5+App特有相关 */
   'app-plus': {

@@ -48,6 +48,7 @@ export default defineConfig(({ mode }) => ({
     __UNI_PLATFORM__: JSON.stringify(process.env.UNI_PLATFORM),
   },
   build: {
+    target: 'es6',
     sourcemap: mode === 'development',
     minify: mode === 'development' ? false : 'terser',
     terserOptions: {

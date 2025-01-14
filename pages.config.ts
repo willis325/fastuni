@@ -6,6 +6,5 @@ export default defineUniPages({
     navigationBarTitleText: 'FastUni',
     navigationBarBackgroundColor: '#F8F8F8',
     backgroundColor: '#F8F8F8',
-    navigationStyle: 'custom',
   },
 });

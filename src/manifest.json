@@ -1,9 +1,9 @@
 {
   "name": "FastUni",
   "appid": "",
-  "description": "",
-  "versionName": "1.0.0",
-  "versionCode": "100",
+  "description": "FastUni - 快速开发 uni-app 模板框架",
+  "versionName": "0.0.1",
+  "versionCode": "",
   "transformPx": false,
   "app-plus": {
     "usingComponents": true,

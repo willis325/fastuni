@@ -1,12 +1,4 @@
 /**
- * 加载图片
- * examples: bg/bg.png
- * @param imgPath: string
- * @return URL
- */
-export const requireImg = (imgPath: string) => new URL(`@/assets/images/${imgPath}`, import.meta.url).href;
-
-/**
  * 字典序
  * @param params { [key: string]: any }
  * @returns string
@@ -35,3 +27,9 @@ export const getUrlObj = (url: string) => {
   });
   return { path, query };
 };
+
+/**
+ * 跳转webview
+ * @param url 链接地址
+ */
+export const goWebview = (url: string) => uni.navigateTo({ url: '/pages-sub/other/webview?url=' + url });

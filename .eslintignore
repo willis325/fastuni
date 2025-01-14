@@ -3,6 +3,8 @@
 *.md
 *.woff
 *.ttf
+*.yaml
+*.lock
 .vscode
 .idea
 .husky

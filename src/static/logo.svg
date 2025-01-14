@@ -1,0 +1,13 @@
+<!-- FastUni willis<793207918@qq.com> -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="30%" style="stop-color:#3985ff; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff5733; stop-opacity:1" /> 
+    </linearGradient>
+  </defs>
+  
+  <g featurekey="inlineSymbolFeature-0" transform="matrix(1.4, 0, 0, 1.4, -10, -11)">
+    <path d="M50,10L10,90h80L50,10z M50,24.909L72.546,70H42.36l3.333-6.667h16.064L50,39.814L31.575,76.667h44.304l3.333,6.666H20.788 L50,24.909z" fill="url(#gradient1)"/>
+  </g>
+</svg>

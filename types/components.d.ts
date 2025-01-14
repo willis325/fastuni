@@ -7,13 +7,15 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Fastuni: typeof import('./../src/components/fastuni.vue')['default']
     FastUni: typeof import('./../src/components/fast-uni.vue')['default']
     WdButton: typeof import('wot-design-uni/components/wd-button/wd-button.vue')['default']
     WdConfigProvider: typeof import('wot-design-uni/components/wd-config-provider/wd-config-provider.vue')['default']
+    WdImg: typeof import('wot-design-uni/components/wd-img/wd-img.vue')['default']
     WdMessageBox: typeof import('wot-design-uni/components/wd-message-box/wd-message-box.vue')['default']
     WdNotify: typeof import('wot-design-uni/components/wd-notify/wd-notify.vue')['default']
+    WdText: typeof import('wot-design-uni/components/wd-text/wd-text.vue')['default']
     WdToast: typeof import('wot-design-uni/components/wd-toast/wd-toast.vue')['default']
     WdTransition: typeof import('wot-design-uni/components/wd-transition/wd-transition.vue')['default']
+    WdWatermark: typeof import('wot-design-uni/components/wd-watermark/wd-watermark.vue')['default']
   }
 }

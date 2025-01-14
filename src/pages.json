@@ -3,15 +3,23 @@
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "FastUni",
     "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8",
-    "navigationStyle": "custom"
+    "backgroundColor": "#F8F8F8"
   },
   "pages": [
     {
       "path": "pages/index/index",
       "type": "home",
       "style": {
-        "navigationBarTitleText": "FastUni"
+        "navigationBarTitleText": "FastUni",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": ""
       }
     }
   ],

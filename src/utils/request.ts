@@ -1,4 +1,4 @@
-import { RequestOptions, RequestResult } from '@/types/request';
+import type { RequestOptions, RequestResult } from '@/types/request';
 
 export const request = (options: RequestOptions) => {
   return new Promise((resolve, reject) => {
@@ -17,7 +17,7 @@ export const request = (options: RequestOptions) => {
           console.error('401', data);
           reject(data.message || '授权失败');
         } else {
-          if (!options?.hasErrorNoFailToast) uni.showToast({ icon: 'none', title: '请求错误' });
+          if (!options?.hasErrorNoFailToast) uni.showToast({ icon: 'none', title: data.message || '请求错误' });
           reject(data.message || '请求错误');
         }
       },
